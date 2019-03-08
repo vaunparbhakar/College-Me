@@ -5,5 +5,76 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
 
+  <p>
+  <label>Name
+  <input type="text" name="studentnme" required>
+  </label> 
+  </p>
+  
+  <p>
+  <label>Phone 
+  <input type="tel" name="phone_number">
+  </label>
+  </p>
+  
+  <p>
+  <label>Email 
+  <input type="email" name="email_address">
+  </label>
+  </p>
+  
+  <fieldset>
+  <legend>What is your gender?</legend>
+  <p><label> <input type="radio" name="gender" required value="Male"> Male </label></p>
+  <p><label> <input type="radio" name="gender" required value="Female"> Female </label></p>
+  <p><label> <input type="radio" name="gender" required value="Other"> Other </label></p>
+  </fieldset>
+  
+  <fieldset>
+  <legend>Colleges</legend>
+  <p><label> <input type="checkbox" name="Colleges" value="University of Washington(Seattle)"> University of Washington(Seattle) </label></p>
+  <p><label> <input type="checkbox" name="Colleges" value="University of Washington(Bothell)">University of Washington(Bothell) </label></p>
+  <p><label> <input type="checkbox" name="Colleges" value="University of Washington(Tacoma)"> University of Washington(Tacoma) </label></p>
+  </fieldset>
+  
+  <p>
+  <label>Pickup Date/Time
+  <input type="datetime-local" name="pickup_time" required>
+  </label>
+  </p>
+    
+  <p>
+  <label>Admission type 
+  <select id="enroll type" name="admission type">
+  <option value="" selected="freshman">Freshman</option>
+  <option value="undergraduate" >Undergraduate</option>
+  <option value="transfer" >Transfer Studnet</option>
+  <option value="international" >Internation Student</option>
+  </select>
+  </label> 
+  </p>
+  
+  <p>
+  <label>Select County
+  <input type="text" name="County Name" required list="County">
+  </label>
+  
+  <datalist id="County">
+  <option value="King">
+  <option value="Pierce">
+  <option value="Kitsap">
+  </datalist>
+  </p>
+  
+  <p>
+  <label>Personal Statement
+  <textarea name="Statement" maxlength="500"></textarea>
+  </label>
+  </p>
+  
+  <p><button>Sumbit info</button></p>
+  
+  </form>
 <ion-content></ion-content>
